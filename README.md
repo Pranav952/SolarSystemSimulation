@@ -1,13 +1,13 @@
 # Solar-System-Simulation
-Solar System Simulation in Python using Pygame.\
-Inspired by [@techwithtim](https://github.com/techwithtim)'s [Youtube video](https://youtu.be/WTLPmUHTPqo).
 
-![Solar System Simulation in Python using Pygame](https://i.imgur.com/LhB0Qf7.png)
+Solar System Simulation in Python using Pygame.\
 
 ## Setup:
+
 - Require pygame package installed. Go to [pygame official website](https://www.pygame.org/wiki/GettingStarted) for more information on pygame installation.
 
 ## Features:
+
 - Show distance from the planets to the Sun by using D.
 - Turn on/off drawing orbit lines of the planets by using S.
 - Move around using arrow keys or mouse by move the mouse to the edges of the screen.

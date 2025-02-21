@@ -1,8 +1,3 @@
-# ===========================================
-# - Title:  Solar System Simulation
-# - Author: @zerot69
-# - Date:   27 Apr 2022
-# ============================================
 
 import pygame
 import math
@@ -10,26 +5,26 @@ import math
 pygame.init()
 WIDTH, HEIGHT = pygame.display.Info().current_w, pygame.display.Info().current_h
 WINDOW = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-COLOR_WHITE = (255, 255, 255)
-COLOR_UNIVERSE = (36, 36, 36)
-COLOR_SUN = (252, 150, 1)
-COLOR_MERCURY = (173, 168, 165)
-COLOR_VENUS = (227, 158, 28)
-COLOR_EARTH = (107, 147, 214)
-COLOR_MARS = (193, 68, 14)
-COLOR_JUPITER = (216, 202, 157)
-COLOR_SATURN = (191, 189, 175)
-COLOR_URANUS = (209, 231, 231)
-COLOR_NEPTUNE = (63, 84, 186)
-FONT_1 = pygame.font.SysFont("Trebuchet MS", 21)
-FONT_2 = pygame.font.SysFont("Trebuchet MS", 16)
+COLOR_WHITE = (220, 220, 220)
+COLOR_UNIVERSE = (10, 10, 30)
+COLOR_SUN = (255, 204, 0)
+COLOR_MERCURY = (139, 136, 136)
+COLOR_VENUS = (255, 165, 0)
+COLOR_EARTH = (30, 144, 255)
+COLOR_MARS = (178, 34, 34)
+COLOR_JUPITER = (218, 165, 32)
+COLOR_SATURN = (210, 180, 140)
+COLOR_URANUS = (0, 206, 209)
+COLOR_NEPTUNE = (72, 61, 139)
+FONT_1 = pygame.font.Font(pygame.font.get_default_font(), 22)
+FONT_2 = pygame.font.Font(pygame.font.get_default_font(), 18)
 pygame.display.set_caption("Solar System Simulation")
 
 
 class Planet:
-    AU = 149.6e6 * 1000  # Astronomical unit
-    G = 6.67428e-11  # Gravitational constant
-    TIMESTEP = 60 * 60 * 24 * 2  # Seconds in 2 days
+    AU = 149.6e6 * 1000 
+    G = 6.67428e-11
+    TIMESTEP = 60 * 60 
     SCALE = 200 / AU
 
     def __init__(self, x, y, radius, color, mass):
@@ -104,7 +99,7 @@ def main():
     move_y = 0
     draw_line = True
 
-    # Metric from: https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+
 
     sun = Planet(0, 0, 30 * Planet.SCALE * 10 ** 9, COLOR_SUN, 1.98892 * 10 ** 30)
     sun.sun = True
